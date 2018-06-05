@@ -1,0 +1,194 @@
+@font-face {
+    font-family: 'DancingScript';
+    src: url(DancingScript.otf);
+}
+body{
+  font-family: "DancingScript";
+  background-color: black;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+header {
+  background-color: #5b7989;
+  border-radius: 10px 10px 0 0;
+  margin-top: 0px;
+  text-align: left;
+
+}
+img{
+  box-shadow: 2px 2px 2px #02010a;
+}
+header h1{
+  text-shadow: 2px 2px #02010a;
+  color: white;
+  font-size: 2em;
+  padding-left: 10px;
+}
+header #enlace{
+  font-size: 1em;
+  display: flex;
+  width: 20%;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+
+}
+
+#enlace a{
+  width: 33%;
+  margin: 0 auto;
+  color: white;
+}
+#enlace #inicio{
+  text-decoration: none;
+}
+#general{
+	display: flex;
+	flex-direction: column;
+}
+#principal{
+  background: #82c3a6;
+  width: 100%;
+  margin-top: 0;
+  margin-left: 0;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#secundario{
+  background:  #d5c75f;
+  border: 1px;
+  margin-top: 0;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+#secundario .contenedor>div figure img{
+  width: 80%;
+  height: 80%;
+
+}
+
+  #izquierda:hover{
+    transform: rotate(10deg);
+    box-shadow: 2px #82c3a6;
+  }
+
+  #derecha:hover{
+    transform: translate(5px,-20px);
+  }
+footer {
+  margin: 0;
+  padding: 0;
+  color: white;
+  width: 100%;
+  background: #C6d5c5;
+  border-radius: 0 0 10px 10px;
+}
+footer img{
+  width: 20px;
+  height: 20px;
+}
+.crtd div{
+  box-sizing: border-box;
+  padding: 20px;
+}
+.crtd{
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+#c1, #c2, #c3, #c4{
+  width: 25%
+}
+@media all and (max-width:900px){
+  body{
+    text-align: center;
+    margin: 0 auto;
+  }
+  #contenido{
+    width: 100%;
+  }
+  header{
+    animation: rebote 3s;
+    width: 100%;
+  }
+  header h1{
+      width: 100%;
+      text-align: center;
+    }
+    header #enlace{
+      width: 100%;
+      text-align: center;
+    }
+    #principal img{
+      margin: 0 auto;
+      width: 100%;
+    }
+    #secundario .contenedor>div{
+      text-align: center;
+      padding: 10px;
+      margin: 10px;
+      width: 100%;
+
+    }
+    #c1, #c2, #c3, #c4{
+      width: 100%;
+      text-align: left;
+    }
+    footer {
+  text-align: center;
+  }
+}
+@media all and (min-width:901px){
+  .contenido{
+
+    text-align: center;
+  }
+  #enlace {
+    display: inline;
+    word-spacing: normal;
+  }
+  header{
+    animation: rebote 3s;
+    display: flex;
+    flex-direction: row;
+  }
+  header #enlace{
+    float: right;
+    display: flex;
+  }
+  #principal img{
+    margin: 0 auto;
+    width: 50%;
+  }
+  #secundario .contenedor>div{
+  	text-align: center;
+  	padding: 10px;
+  	margin: 10px;
+    width: 50%;
+  }
+  .contenedor{
+    	display: flex;
+    	flex-direction: row;
+    	clear: both;
+    }
+  header h1{
+    width: 50%;
+  }
+  #c1, #c2, #c3, #c4{
+    width: 25%;
+  }
+}
+@-webkit-keyframes rebote{
+  0%{
+    margin-top: 150%
+  }
+  50%{
+    margin-top: -5%;
+  }
+  100%{
+    margin-top: 0%
+  }
+}
